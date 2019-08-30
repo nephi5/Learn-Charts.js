@@ -1,0 +1,21 @@
+<div
+  id="chart-container"
+  style="display: flex; height: 300px; align-items: center; justify-content: center"
+>
+  <div style="position: relative;">
+    <div id="tooltip"></div>
+    <canvas id="chart"></canvas>
+  </div>
+</div>
+
+<table>
+  <tr
+    class="data-row"
+    *ngFor="let item of financialData; let i = index"
+    (mouseover)="onMouseover(i)"
+    (mouseleave)="onMouseLeave(i)"
+  >
+    <td>{{ item.currency }}</td>
+    <td>{{ item.sum }}</td>
+  </tr>
+</table>
