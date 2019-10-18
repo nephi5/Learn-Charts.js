@@ -5,7 +5,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { CustomTooltipComponent } from './custom-tooltip/custom-tooltip.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'custom' },
+  { path: '', pathMatch: 'full', redirectTo: 'custom', hello: {another: 1} },
   {
     path: 'bar-chart',
     component: BarChartComponent
